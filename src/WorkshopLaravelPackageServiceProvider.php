@@ -2,10 +2,10 @@
 
 namespace AmiPraha\WorkshopLaravelPackage;
 
-use Illuminate\Support\ServiceProvider;
 use AmiPraha\WorkshopLaravelPackage\Commands\WorkshopLaravelPackageCommand;
 use AmiPraha\WorkshopLaravelPackage\Http\Controllers\DemoController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
 
 class WorkshopLaravelPackageServiceProvider extends ServiceProvider
 {
@@ -39,7 +39,7 @@ class WorkshopLaravelPackageServiceProvider extends ServiceProvider
         // routes of app
         // Route::myPackage('demo);
 
-        Route::macro('myPackage', function(string $prefix = 'demo'){
+        Route::macro('myPackage', function (string $prefix = 'demo') {
             Route::get($prefix, [DemoController::class, 'index']);
         });
     }
