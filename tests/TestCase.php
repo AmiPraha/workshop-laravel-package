@@ -2,9 +2,9 @@
 
 namespace AmiPraha\WorkshopLaravelPackage\Tests;
 
+use AmiPraha\WorkshopLaravelPackage\WorkshopLaravelPackageServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AmiPraha\WorkshopLaravelPackage\WorkshopLaravelPackageServiceProvider;
 
 class TestCase extends Orchestra
 {

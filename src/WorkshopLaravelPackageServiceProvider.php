@@ -2,8 +2,8 @@
 
 namespace AmiPraha\WorkshopLaravelPackage;
 
-use Illuminate\Support\ServiceProvider;
 use AmiPraha\WorkshopLaravelPackage\Commands\WorkshopLaravelPackageCommand;
+use Illuminate\Support\ServiceProvider;
 
 class WorkshopLaravelPackageServiceProvider extends ServiceProvider
 {
