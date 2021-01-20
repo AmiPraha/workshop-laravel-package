@@ -4,6 +4,8 @@ namespace AmiPraha\WorkshopLaravelPackage;
 
 use Illuminate\Support\ServiceProvider;
 use AmiPraha\WorkshopLaravelPackage\Commands\WorkshopLaravelPackageCommand;
+use AmiPraha\WorkshopLaravelPackage\Http\Controllers\DemoController;
+use Illuminate\Support\Facades\Route;
 
 class WorkshopLaravelPackageServiceProvider extends ServiceProvider
 {
@@ -31,6 +33,15 @@ class WorkshopLaravelPackageServiceProvider extends ServiceProvider
         }
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'workshop-laravel-package');
+
+        // Route::get('demo', [DemoController::class, 'index']);
+
+        // routes of app
+        // Route::myPackage('demo);
+
+        Route::macro('myPackage', function(string $prefix = 'demo'){
+            Route::get($prefix, [DemoController::class, 'index']);
+        });
     }
 
     public function register()

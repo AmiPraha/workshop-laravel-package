@@ -12,6 +12,6 @@ class WorkshopLaravelPackageCommand extends Command
 
     public function handle()
     {
-        $this->comment('All done');
+        $this->comment('All done ' . config('workshop-laravel-package.name'));
     }
 }
