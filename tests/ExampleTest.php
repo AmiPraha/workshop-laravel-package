@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace AmiPraha\WorkshopLaravelPackage\Tests;
 
 class ExampleTest extends TestCase
 {

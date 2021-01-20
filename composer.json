@@ -1,16 +1,17 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "ami-praha/workshop-laravel-package",
+    "description": "Test description",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "amipraha",
+        "ami-praha",
+        "workshop-laravel-package"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/AmiPraha/workshop-laravel-package",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Miloslav Janoušek",
+            "email": "miloslav.janousek@ami.cz",
             "role": "Developer"
         }
     ],
@@ -24,13 +25,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "AmiPraha\\WorkshopLaravelPackage\\": "src",
+            "AmiPraha\\WorkshopLaravelPackage\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "AmiPraha\\WorkshopLaravelPackage\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "AmiPraha\\WorkshopLaravelPackage\\WorkshopLaravelPackageServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "WorkshopLaravelPackage": "AmiPraha\\WorkshopLaravelPackage\\WorkshopLaravelPackageFacade"
             }
         }
     },
